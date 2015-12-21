@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace SIS_venta
 {
-    public partial class Form1 : Form
+    public partial class venta : Form
     {
-        public Form1()
+        public venta()
         {
             InitializeComponent();
         }
