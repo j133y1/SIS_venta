@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace SIS_venta
 {
-    public partial class agregar_vendedores : Form
+    public partial class agregar : Form
     {
-        public agregar_vendedores()
+        public agregar()
         {
             InitializeComponent();
         }
