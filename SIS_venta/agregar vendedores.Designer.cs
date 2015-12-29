@@ -30,14 +30,14 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtnombre = new System.Windows.Forms.TextBox();
+            this.txtapellido = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtid = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtcontraseña = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtvuelcontraseña = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -50,6 +50,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -62,19 +63,19 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Nombre";
             // 
-            // textBox1
+            // txtnombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(131, 42);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(190, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtnombre.Location = new System.Drawing.Point(131, 42);
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Size = new System.Drawing.Size(190, 20);
+            this.txtnombre.TabIndex = 2;
             // 
-            // textBox2
+            // txtapellido
             // 
-            this.textBox2.Location = new System.Drawing.Point(131, 87);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(190, 20);
-            this.textBox2.TabIndex = 4;
+            this.txtapellido.Location = new System.Drawing.Point(131, 87);
+            this.txtapellido.Name = "txtapellido";
+            this.txtapellido.Size = new System.Drawing.Size(190, 20);
+            this.txtapellido.TabIndex = 4;
             // 
             // label2
             // 
@@ -87,12 +88,12 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Apellido";
             // 
-            // textBox3
+            // txtid
             // 
-            this.textBox3.Location = new System.Drawing.Point(131, 135);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(190, 20);
-            this.textBox3.TabIndex = 6;
+            this.txtid.Location = new System.Drawing.Point(131, 135);
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(190, 20);
+            this.txtid.TabIndex = 6;
             // 
             // label3
             // 
@@ -105,12 +106,12 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "ID";
             // 
-            // textBox4
+            // txtcontraseña
             // 
-            this.textBox4.Location = new System.Drawing.Point(131, 184);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(190, 20);
-            this.textBox4.TabIndex = 8;
+            this.txtcontraseña.Location = new System.Drawing.Point(131, 184);
+            this.txtcontraseña.Name = "txtcontraseña";
+            this.txtcontraseña.Size = new System.Drawing.Size(190, 20);
+            this.txtcontraseña.TabIndex = 8;
             // 
             // label4
             // 
@@ -123,12 +124,12 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Contraseña";
             // 
-            // textBox5
+            // txtvuelcontraseña
             // 
-            this.textBox5.Location = new System.Drawing.Point(131, 239);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(190, 20);
-            this.textBox5.TabIndex = 10;
+            this.txtvuelcontraseña.Location = new System.Drawing.Point(131, 239);
+            this.txtvuelcontraseña.Name = "txtvuelcontraseña";
+            this.txtvuelcontraseña.Size = new System.Drawing.Size(190, 20);
+            this.txtvuelcontraseña.TabIndex = 10;
             // 
             // label5
             // 
@@ -157,15 +158,15 @@
             this.BackColor = System.Drawing.Color.DarkRed;
             this.ClientSize = new System.Drawing.Size(460, 368);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtvuelcontraseña);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtcontraseña);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtid);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtapellido);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtnombre);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -182,14 +183,14 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtnombre;
+        private System.Windows.Forms.TextBox txtapellido;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtid;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtcontraseña;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtvuelcontraseña;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button2;
     }

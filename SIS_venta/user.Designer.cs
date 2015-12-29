@@ -61,6 +61,7 @@
             this.btinicio.TabIndex = 1;
             this.btinicio.Text = "INICIAR";
             this.btinicio.UseVisualStyleBackColor = false;
+            this.btinicio.Click += new System.EventHandler(this.btinicio_Click);
             // 
             // label1
             // 

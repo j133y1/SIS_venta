@@ -15,5 +15,13 @@ namespace SIS_venta
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (txtcontraseña.Text == txtvuelcontraseña.Text)
+            {
+
+            }
+        }
     }
 }

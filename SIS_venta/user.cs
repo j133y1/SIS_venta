@@ -15,5 +15,10 @@ namespace SIS_venta
         {
             InitializeComponent();
         }
+
+        private void btinicio_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
