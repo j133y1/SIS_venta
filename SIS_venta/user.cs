@@ -18,7 +18,8 @@ namespace SIS_venta
 
         private void btinicio_Click(object sender, EventArgs e)
         {
-
+            frmPrincipal Objprincipal = new frmPrincipal();
+            Objprincipal.Show();
         }
     }
 }

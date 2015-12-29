@@ -54,7 +54,7 @@
             this.btinicio.BackColor = System.Drawing.Color.DodgerBlue;
             this.btinicio.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btinicio.ForeColor = System.Drawing.Color.White;
-            this.btinicio.Location = new System.Drawing.Point(111, 174);
+            this.btinicio.Location = new System.Drawing.Point(86, 170);
             this.btinicio.Margin = new System.Windows.Forms.Padding(2);
             this.btinicio.Name = "btinicio";
             this.btinicio.Size = new System.Drawing.Size(100, 23);
